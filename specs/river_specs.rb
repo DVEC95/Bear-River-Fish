@@ -3,11 +3,13 @@ require('minitest/reporters')
 Minitest::Reporters.use! Minitest::Reporters::SpecReporter.new
 
 require_relative('../river.rb')
+require_relative('../fish.rb')
 
 class RiverTest < MiniTest::Test
 
   def setup()
-    @river = River.new("Amazon", 100)
+    @river = River.new("Amazon")
+    @fish = Fish.new("Salmon", 20)
   end
 
   def test_river_name
@@ -15,8 +17,11 @@ class RiverTest < MiniTest::Test
   end
 
   def test_fish_amount
-    assert_equal(100, @river.fish)
+    assert_equal("Salmon", @fish.name)
   end
 
+  def test_fish_amount
+    assert_equal(20, @fish.amount)
+  end
 
 end

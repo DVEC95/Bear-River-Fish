@@ -7,8 +7,4 @@ class Fish
     @amount = amount
   end
 
-  
-
-
-
 end
