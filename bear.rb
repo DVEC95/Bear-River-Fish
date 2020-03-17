@@ -12,6 +12,8 @@ class Bear
     return @stomach.size()
   end
 
-  
+  def eat_fish(fish)
+    @stomach.push(fish)
+  end
 
 end

@@ -1,10 +1,9 @@
 class Fish
 
-  attr_reader :name, :amount
+  attr_reader :type
 
-  def initialize(name, amount)
-    @name = name
-    @amount = amount
+  def initialize(type)
+    @type = type
   end
 
 end
