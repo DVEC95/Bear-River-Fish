@@ -8,12 +8,17 @@ class Bear
     @stomach = []
   end
 
+  def roar
+    return "#{@name} lets out a roar!"
+  end
+
   def bear_hungry()
     return @stomach.size()
   end
 
-  def eat_fish(fish)
-    @stomach.push(fish)
+  def eat_fish(river)
+    fish = river.bear_eat_fish
+    @stomach << fish
   end
 
 end
